@@ -72,3 +72,17 @@ const repo = {
 
     console.log(`El numero total de fotos del usuario es: ${facebook.totalPhotos()}`)
     console.log(`El usuario ${facebook.user} ha realizado un total de ${facebook.numberOfPost} publicaciones`)
+
+                                        //Modelando informacion de uber
+
+const uber = {
+  usuario: "Jose Anaya",
+  blackTrips: 55,
+  suvTrips: 10,
+  xTrips: 125,
+  rate: 4.90,
+  totalTrips: function() {
+    return this.blackTrips + this.suvTrips + this.xTrips
+  }
+}
+console.log(`El usuario ${uber.usuario} ha realizado un total de  ${uber.totalTrips()} viajes.`)
